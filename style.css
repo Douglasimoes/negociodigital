@@ -1,0 +1,74 @@
+/* mais sobre view port */
+/* https://www.alura.com.br/artigos/guia-de-unidades-no-css */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+
+/* guia flex-box */
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap'); /*declara a fonte diretamente aqui no CSS*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.titulo-destaque{
+    color: #22D4FD;
+}
+
+
+body{
+    height: 100vh; /*centralizar na página*/
+    background-color:black; /*cor do fundo*/
+    color:#fff; /*cor da letra*/
+    box-sizing: border-box; /*ela esta no body, caixa maior. Mantem a caixa filho alinhada na caixa maior*/
+}
+
+.titulo-destaque{
+    color: #22D4FD;
+}
+
+.container{
+    display: flex; /*main class="container" no HTML*/
+    align-items: center; /*alinhamento vertical, usa o maior item para alinhar o menor*/
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin: 10%;
+}
+
+.container__conteudo{ /* Está em <section class="container__conteudo"> no HTML */
+    width: 650px;
+}
+
+.container__conteudo__titulo{ 
+    font-size: 30px;
+    font-family: 'Krona One', sans-serif;
+    word-spacing: 6px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    
+}
+
+.container__conteudo__texto{ /*Declarado a fonte aqui no CSS o link vai no HTML*/
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+ 
+.container__links{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .container__links a{} Exemplo de outra maneira de declaração */
+
+.container__links__link{
+    background-color: #22D4FD;
+    width: 280px;
+    padding: 16px;
+    text-align: center;
+    font-size: 24px;
+    color: #000;
+    font-weight:600;
+    text-decoration:none;
+    font-family: 'Monteserrat', sans-serif;
+    border-radius: 16px;
+}
